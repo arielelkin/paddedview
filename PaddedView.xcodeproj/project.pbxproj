@@ -13,7 +13,7 @@
 		835E3A591C9879620043AD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 835E3A571C9879620043AD5A /* LaunchScreen.storyboard */; };
 		835E3A641C9879620043AD5A /* PaddedViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E3A631C9879620043AD5A /* PaddedViewTests.swift */; };
 		835E3A6F1C9879620043AD5A /* PaddedViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E3A6E1C9879620043AD5A /* PaddedViewUITests.swift */; };
-		835E3A7D1C987B060043AD5A /* PaddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E3A7C1C987B060043AD5A /* PaddedView.swift */; };
+		835E3A7F1C9883040043AD5A /* PaddedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835E3A7E1C9883040043AD5A /* PaddedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		835E3A6A1C9879620043AD5A /* PaddedViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PaddedViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		835E3A6E1C9879620043AD5A /* PaddedViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddedViewUITests.swift; sourceTree = "<group>"; };
 		835E3A701C9879620043AD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		835E3A7C1C987B060043AD5A /* PaddedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedView.swift; sourceTree = "<group>"; };
+		835E3A7E1C9883040043AD5A /* PaddedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddedView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +99,7 @@
 			children = (
 				835E3A4E1C9879620043AD5A /* AppDelegate.swift */,
 				835E3A501C9879620043AD5A /* ViewController.swift */,
-				835E3A7C1C987B060043AD5A /* PaddedView.swift */,
+				835E3A7E1C9883040043AD5A /* PaddedView.swift */,
 				835E3A551C9879620043AD5A /* Assets.xcassets */,
 				835E3A571C9879620043AD5A /* LaunchScreen.storyboard */,
 				835E3A5A1C9879620043AD5A /* Info.plist */,
@@ -257,7 +257,7 @@
 			files = (
 				835E3A511C9879620043AD5A /* ViewController.swift in Sources */,
 				835E3A4F1C9879620043AD5A /* AppDelegate.swift in Sources */,
-				835E3A7D1C987B060043AD5A /* PaddedView.swift in Sources */,
+				835E3A7F1C9883040043AD5A /* PaddedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
