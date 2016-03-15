@@ -52,17 +52,17 @@ class ViewController: UIViewController {
         view.addSubview(imageView)
 
 
-        let constraints = [
-            "H:|-[imageView]-|",
-            "H:|-[redLabel]-|",
-            "H:|-[blueView]-|",
+let constraints = [
+    "H:|-[imageView]-|",
+    "H:|-[redLabel]-|",
+    "H:|-[blueView]-|",
 
-            "V:|-30-[imageView][redLabel][blueView(20)]"
+    "V:|-30-[imageView][redLabel][blueView(20)]"
 
-            ].flatMap {
-                NSLayoutConstraint.constraintsWithVisualFormat($0, options: [], metrics: nil, views: viewsDict)
-        }
-        
-        NSLayoutConstraint.activateConstraints(constraints)
+    ].flatMap {
+        NSLayoutConstraint.constraintsWithVisualFormat($0, options: [], metrics: nil, views: viewsDict)
+}
+
+NSLayoutConstraint.activateConstraints(constraints)
     }
 }
