@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import PaddedView
 
 class PaddedViewTests: XCTestCase {
@@ -21,16 +22,22 @@ class PaddedViewTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInit() {
+
+        let label = UILabel()
+        label.text = "hello"
+
+        let padding = UIEdgeInsets(top: 20, left: 20, bottom: 10, right: 10)
+
+        let labelPadded = PaddedView(content: label, padding: padding)
+
+        XCTAssertEqual(labelPadded.contentView, label)
+        XCTAssertEqual(labelPadded.padding, padding)
+
+        let newPadding = UIEdgeInsets(top: 30, left: 20, bottom: 50, right: 50)
+
+        labelPadded.padding = newPadding
+
+        XCTAssertEqual(labelPadded.padding, newPadding)
     }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
 }
