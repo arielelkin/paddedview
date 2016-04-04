@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "PaddedView"
-  s.version      = "1.0.1"
+  s.version      = "1.1.0"
   s.summary      = "Easily add padding to your UILabels, UIImageViews, and custom UIViews."
 
   s.description  = "PaddedView is a UIView subclass that sets its layoutMargins to UIEdgeInsetsZero if its content's height or width is zero. This makes it easy to create views that need to show padding, but which need the padding to disappear when their content is nil."

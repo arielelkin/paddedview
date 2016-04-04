@@ -16,7 +16,7 @@ import UIKit
  property to `false`.
 
  */
-class PaddedView: UIView {
+public class PaddedView: UIView {
 
     let contentView: UIView
     var padding: UIEdgeInsets
@@ -44,7 +44,7 @@ class PaddedView: UIView {
         NSLayoutConstraint.activateConstraints(constraints)
     }
 
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
 
         if contentView.bounds.size.width == 0 || contentView.bounds.size.height == 0 {
@@ -56,16 +56,16 @@ class PaddedView: UIView {
     }
 
     //Most padding tends to be at the bottom:
-    convenience init(content: UIView, bottomPadding: CGFloat) {
+    public convenience init(content: UIView, bottomPadding: CGFloat) {
         self.init(content: content, padding: UIEdgeInsets(top: 0, left: 0, bottom: bottomPadding, right: 0))
     }
 
-    convenience init(content: UIView, topPadding: CGFloat) {
+    public convenience init(content: UIView, topPadding: CGFloat) {
         self.init(content: content, padding: UIEdgeInsets(top: topPadding, left: 0, bottom: 0, right: 0))
     }
 
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
