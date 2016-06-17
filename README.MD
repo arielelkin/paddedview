@@ -4,6 +4,8 @@ This makes it easy to create views that need to show padding, but which need the
 
 ## Usage
 
+Add `pod 'PaddedView'` to your Podfile or drag and drop `PaddedView.swift` into your project.
+
 ```swift
 import UIKit
 import PaddedView
